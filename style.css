@@ -186,3 +186,58 @@ features section
 .word-exp{
     font-size: .5em;
 }
+
+
+/* -------------facts section------------ */
+
+.some-facts{
+    
+    margin-top: 4em;
+    margin-left: 14em;
+    
+}
+.facts-title{
+    font-weight: 600;
+    font-size: 2.8em;
+}
+.facts-desc{
+    margin-top: .7em;
+    font-size: 1em;
+    color: #727272;
+}
+
+/* --------------------------
+         achivementrs
+---------------------------------------*/
+.achivements{
+    display: flex;
+    justify-content: center;
+    gap: 7.50em;
+    text-align: center;
+    margin-top: 9em;
+    
+}
+.winnings{
+    border: 1px solid #FF900E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3.75em;
+    border-radius: 10px;
+}
+.achivements img{
+    height: 3em;
+    width: 3em;
+    padding: 2em 6em;
+}
+.score{
+    font-size: 2.81em;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: .3em;
+}
+.score-subject{
+    font-size: 1.1em;
+    color: #727272;
+}
