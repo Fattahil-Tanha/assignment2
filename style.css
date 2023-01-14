@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ---------header font--------- */
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Open+Sans:wght@400;700&family=Poppins:wght@100&family=Work+Sans:wght@500&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+
+}
+nav{
+    padding-top: 3.8125em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 14em;
+}
+
+.nav-links , a{
+    list-style: none;
+    text-decoration: none;
+    color: #727272;
+    font-size: 18px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+}
+.nav-title{
+    font-size: 2.8125em;
+    font-weight: 700;
+}
+/* -----------
+header section
+-------------*/
+header{
+    background-color: rgba(255, 144, 14, 10%);
+    
+    
+}
+.head-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 7em;
+}
+.head-title{
+    font-size: 4em;
+    font-weight: 700;
+}
+.head-desc{
+    padding-top: 2.0625em;
+    opacity: .7;
+    padding-bottom: 2em;
+}
+.btn-primary{
+    height: 4em;
+    width: 11.25em;
+    font-size: 1.25em;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+.btn-primary:hover{
+    text-shadow: #FF900E;
+    background-color: white;
+    color: #FF900E;
+    border: 1px solid #FF900E;
+    
+}
+
+.head-banner{
+    margin-top: 3.125em;
+    margin-bottom: 2.9375em;
+}
+/* --------------
+features section
+---------------*/
+.features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4.5625em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10em;
+    margin-top: 3.125em;
+}
+.feature-title{
+    font-size: 2.8125em;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+}
+.yellow-word{
+    color: #FF900E;
+}
+.gray-word{
+    color: #727272;
+    font-weight: 400;
+}
+.feature-desc{
+    opacity: 0.7;
+    margin-top: 1.5em;
+}
+.features-btn{
+    margin-top: 2em;
+}
+/* -----------------------------------------
+           10 years experience section
+------------------------------------------------------------------------ */
+.exp-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 8.125em;
+}
+.exp-details{
+    margin-left: 15em;
+}
+
+.exp-title{
+    font-size: 2.8125em;
+    font-weight: 600;
+    padding-left: .3em;
+    border-left: .1em solid #FF900E;
+}
+.exp-title-details{
+    color: #727272;
+}
+.exp-more-details{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1em;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+.details-box{
+    padding: 2em;
+    margin-top: 1em;
+}
+.info-title{
+
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+.exp-infos{
+    
+    color: #727272;
+}
+.btn-section{
+    display: flex;
+    justify-content: center;
+    
+}
+.exp-btn{
+    margin-top: -5em;
+    font-size: 2em;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+    padding: .5em 1em ;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.6s ease-in-out;
+}
+
+.exp-btn:hover{
+    background-color: white;
+    color: #FF900E;
+}
+
+
+/* --------------------------------------animation btn----------------------------- */
+.plus:hover{
+   rotate: 360deg;
+}
+.word-exp{
+    font-size: .5em;
+}
