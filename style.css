@@ -8,11 +8,13 @@ body{
     font-family: 'Work Sans', sans-serif;
 
 }
+  
 nav{
     padding-top: 3.8125em;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
-    margin: 0 14em;
+    padding: 4em 14em;
 }
 
 .nav-links , a{
@@ -25,7 +27,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: space-around;
-    gap: 3em;
+    gap: 1em;
 }
 .nav-title{
     font-size: 2.8125em;
@@ -36,7 +38,8 @@ header section
 -------------*/
 header{
     background-color: rgba(255, 144, 14, 10%);
-    
+    background-size: cover;
+    background-position: center;
     
 }
 .head-info{
@@ -68,7 +71,7 @@ header{
     cursor: pointer;
     transition: .6s ease-in-out;
 }
-
+/* ---------------------------------------------animated btn--------------------------- */
 .btn-primary:hover{
     text-shadow: #FF900E;
     background-color: white;
@@ -119,10 +122,9 @@ features section
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 8.125em;
+    margin-left: 11em;
 }
-.exp-details{
-    margin-left: 15em;
-}
+
 
 .exp-title{
     font-size: 2.8125em;
@@ -132,6 +134,8 @@ features section
 }
 .exp-title-details{
     color: #727272;
+    font-size: 18px;
+    margin-left: 1em;
 }
 .exp-more-details{
     display: grid;
@@ -176,24 +180,18 @@ features section
 .exp-btn:hover{
     background-color: white;
     color: #FF900E;
-}
-
-
-/* --------------------------------------animation btn----------------------------- */
-.plus:hover{
-   rotate: 360deg;
-}
-.word-exp{
-    font-size: .5em;
+    transform: translateY(-30px);
 }
 
 
 /* -------------facts section------------ */
 
 .some-facts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     
     margin-top: 4em;
-    margin-left: 14em;
     
 }
 .facts-title{
@@ -219,7 +217,8 @@ features section
 }
 .winnings{
     border: 1px solid #FF900E;
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -240,4 +239,282 @@ features section
 .score-subject{
     font-size: 1.1em;
     color: #727272;
+}
+/* -----------------------------------
+          sponsors section
+---------------------------------*/
+
+.our-sponsors{
+    margin-top: 11.25em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sponsors-title{
+    font-weight: 600;
+    font-size: 2.81em;
+    margin-bottom: .5em;
+}
+.sponsors-desc{
+    color: #727272;
+}
+.sponsors{
+    margin-top: 3.15em;
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* -------------footer----------------- */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-text{
+    padding: 2em 7em;
+    color: #424242;
+    font-size: 1.25em;  
+}
+.footer-desc{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    background-color: rgba(255, 144, 14, 10%);
+    width: 75%;
+}
+form{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#email{
+    height: 2em;
+    width: 30em;
+    border: 3px solid slateblue;
+    padding: 1em;
+    border-radius: 25em 0 0 25em;
+}
+
+.join-btn{
+    height: 2.88em;
+    width: 6.25em;
+    font-size: 1.25em;
+    background-color: slateblue;
+    border: none;
+    border-radius: 0 25em  25em 0;
+    color: #ffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+.join-btn:hover{
+   color: slateblue;
+   background-color: white;
+   text-shadow: 2px 2px 5px #FF900E;
+
+}
+
+
+/* ------------------------------
+         responsive
+-------------------------------- */
+
+@media screen and (max-width:576px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    /* ---------------header section-------------- */
+   
+     nav{
+        display: flex;
+        position: fixed;
+        padding: 1em;
+        justify-content: space-between;
+        border: 1px solid #FF900E;
+        width: 100%;
+        color: #FF900E;
+        border-radius: 0 25em 25em 25em;
+        
+     }
+     .nav-title{
+        font-size: 20px;
+        font-weight: 700;
+     }
+     nav a{ 
+        top:1em;
+        display: flex;
+        padding: 5px;
+        color: black;
+        padding-right: .8em;
+        
+     }
+    
+    header{
+        grid-template-columns: 1fr;
+        
+    }
+    .features{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* ----------------------exp section-------------- */
+
+    .exp-section{
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         margin-left: 1em;
+         
+    }
+    .exp-title-details{
+        font-size: 8px;
+    }
+    .exp-details{
+        margin-left: .1em;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 1em;
+    }
+    .exp-more-details{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .btn-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* -----------------------achievement section---------------- */
+
+    .achivements{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em; 
+    }
+
+    .fact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    /* -----------------spomsors section----------------- */
+
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+        justify-content: center;
+        margin-left: 5em;
+    }
+    .footer-desc{
+        width: 100%;
+    }
+}
+
+/* ------------------------tablet responsive------------------ */
+@media screen and (min-width:577px) and (max-width:768px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+     /* ---------------header section-------------- */
+   
+     nav{
+        display: flex;
+        position: fixed;
+        padding: 1em;
+        justify-content: space-between;
+        border: 1px solid #FF900E;
+        width: 100%;
+        color: #FF900E;
+        border-radius: 0 25em 25em 25em;
+        
+     }
+     .nav-title{
+        font-size: 20px;
+        font-weight: 700;
+     }
+     nav a{ 
+        top:1em;
+        display: flex;
+        padding: 5px;
+        color: black;
+        padding-right: .8em;
+        
+     }
+    
+    header{
+        grid-template-columns: 1fr;
+        
+    }
+    .features{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* ----------------------exp section-------------- */
+
+    .exp-section{
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         margin-left: 1em;
+         
+    }
+    .exp-title-details{
+        font-size: 8px;
+    }
+    .exp-details{
+        margin-left: .1em;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 1em;
+    }
+    .exp-more-details{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .btn-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* -----------------------achievement section---------------- */
+
+    .achivements{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em; 
+    }
+
+    .fact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    /* -----------------spomsors section----------------- */
+
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+        justify-content: center;
+        margin-left: 5em;
+    }
+    .footer-desc{
+        width: 100%;
+    }
 }
