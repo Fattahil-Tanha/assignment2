@@ -301,7 +301,7 @@ form{
 }
 
 .join-btn{
-    height: 2.88em;
+    height: 2.98em;
     width: 6.25em;
     font-size: 1.25em;
     background-color: slateblue;
@@ -342,7 +342,7 @@ form{
         border: 1px solid #FF900E;
         width: 100%;
         color: #FF900E;
-        border-radius: 0 25em 25em 25em;
+        border-radius: 0 0 25em 25em;
         
      }
      .nav-title{
@@ -354,13 +354,16 @@ form{
         display: flex;
         padding: 5px;
         color: black;
-        padding-right: .8em;
+        padding-right: 1.2em;
         
      }
     
     header{
         grid-template-columns: 1fr;
         
+    }
+    .head-banner{
+        width: 100vw;
     }
     .features{
         grid-template-columns: repeat(1,1fr);
