@@ -22,7 +22,11 @@ nav{
     text-decoration: none;
     color: #727272;
     font-size: 18px;
-    
+    transition: 2s ease-in; 
+}
+.nav ,li:hover{
+    border-bottom: 2px solid #FF900E;
+
 }
 nav ul{
     display: flex;
@@ -32,6 +36,7 @@ nav ul{
 .nav-title{
     font-size: 2.8125em;
     font-weight: 700;
+    cursor: pointer;
 }
 /* -----------
 header section
@@ -229,6 +234,12 @@ features section
     height: 3em;
     width: 3em;
     padding: 2em 6em;
+    transition: 1s ease-out;
+}
+/* --------------------a little hover effect--------------- */
+.ribon:hover{
+    transform: translatey(-20px);
+    
 }
 .score{
     font-size: 2.81em;
